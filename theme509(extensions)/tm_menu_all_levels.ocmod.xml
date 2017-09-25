@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Top Menu All Levels</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>8</code>
+	<file path="catalog/controller/common/header.php">
+		<operation>
+			<search><![CDATA[
+			$data['language'] = $this->load->controller('common/language');
+			]]></search>
+			<add position="before"><![CDATA[
+			$this->load->model('design/topmenu');
+			$data['categories'] = $this->model_design_topmenu->getMenu();
+			]]></add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Text sale</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>1</code>
+	<file path="catalog/controller/module/featured.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_compare'] = $this->language->get('button_compare');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['text_sale'] = $this->language->get('text_sale');
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/special.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_compare'] = $this->language->get('button_compare');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['text_sale'] = $this->language->get('text_sale');
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/latest.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_compare'] = $this->language->get('button_compare');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['text_new'] = $this->language->get('text_new');
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/english/module/featured.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']      = 'Ex Tax:';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['text_sale']      = 'Sale';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/english/module/special.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']      = 'Ex Tax:';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['text_sale']      = 'Sale';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/english/module/latest.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']      = 'Ex Tax:';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['text_new']      = 'New';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/de-DE/module/featured.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_sale']      = 'Verkauf';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/de-DE/module/special.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_sale']      = 'Verkauf';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/de-DE/module/latest.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_new']      = 'Neue ';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/russian/module/featured.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_sale']      = 'Скидка';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/russian/module/special.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_sale']      = 'Скидка';
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/russian/module/latest.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_tax']
+			]]></search>
+			<add position="before"><![CDATA[
+			$_['text_new']      = 'Новый ';
+			]]></add>
+		</operation>
+	</file>
+</modification>

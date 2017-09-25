@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>TM Footer</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>5</code>
+	<file path="catalog/controller/common/footer.php">
+		<operation error="skip">
+			<search><![CDATA[ $data['text_newsletter'] = $this->language->get('text_newsletter'); ]]></search>
+			<add position="after"><![CDATA[ 
+			$data['text_account'] = $this->language->get('text_account');
+			$data['text_follow'] = $this->language->get('text_follow');
+			$data['text_support'] = $this->language->get('text_support');
+			$data['text_twi'] = $this->language->get('text_twi');
+			$data['text_fb'] = $this->language->get('text_fb');
+			$data['text_rss'] = $this->language->get('text_rss');
+			$data['text_yt'] = $this->language->get('text_yt');
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search><![CDATA[ $data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL'); ]]></search>
+			<add position="after"><![CDATA[ 
+			$data['address'] = nl2br($this->config->get('config_address'));
+			$data['telephone'] = $this->config->get('config_telephone');
+			$data['fax'] = $this->config->get('config_fax');
+			
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/common/footer.php">
+		<operation error="skip">
+			<search><![CDATA[ $_['text_information'] ]]></search>
+			<add position="before"><![CDATA[ 
+				$_['text_follow']   = 'Follow Us';
+				$_['text_support']   = 'Online support';
+				$_['text_fb']   = 'Facebook';
+				$_['text_twi']   = 'Twitter';
+				$_['text_rss']   = 'RSS';
+				$_['text_yt']   = 'You Tube';
+				]]></add>
+		</operation>
+	</file>
+</modification>

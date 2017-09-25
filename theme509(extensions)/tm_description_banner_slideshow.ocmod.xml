@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Description fo banners</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.opencart.com</link>
+	<code>3</code>
+	<file path="admin/controller/design/banner.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_remove'] = $this->language->get('button_remove');
+			]]></search>
+			<add position="after"><![CDATA[
+
+			$data['entry_description'] = $this->language->get('entry_description');
+			
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$data['banner_images'][] = array(
+			]]></search>
+			<add position="after"><![CDATA[
+			'description'			   => $banner_image['description'],
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/model/design/banner.php">
+		<operation>
+			<search><![CDATA[ $this->db->escape($banner_image_description['title']) . "'"); ]]>
+			</search>
+			<add position="replace"><![CDATA[ $this->db->escape($banner_image_description['title']) . "', description = '" .  $this->db->escape($banner_image_description['description']) . "'"); ]]>
+			</add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$banner_image_description_data[$banner_image_description['language_id']] = array('title' => $banner_image_description['title']);
+			]]></search>
+			<add position="after"><![CDATA[
+			$banner_image_description_desc[$banner_image_description['language_id']] = array ( 'description' => $banner_image_description['description'] );
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			'banner_image_description' => $banner_image_description_data,
+			]]></search>
+			<add position="after"><![CDATA[
+			'description'              => $banner_image_description_desc,
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/language/*/design/banner.php">
+		<operation>
+			<search><![CDATA[
+			$_['entry_sort_order']   = 'Sort Order';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['entry_description']       = 'Description:';
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/view/template/design/banner_form.tpl">
+		<operation>
+			<search><![CDATA[
+			<td class="text-left"><?php echo $entry_title; ?></td>
+			]]></search>
+			<add position="after"><![CDATA[
+			<td class="text-left"><?php echo $entry_description; ?></td>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			<td class="text-left"><input type="text" name="banner_image[<?php echo $image_row; ?>][link]" value="<?php echo $banner_image['link']; ?>" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>
+			]]></search>
+			<add position="before"><![CDATA[
+			<td>
+				<?php foreach ($languages as $language) { ?>
+				<textarea style="width:300px; height:150px;" name="banner_image[<?php echo $image_row; ?>][banner_image_description][<?php echo $language['language_id']; ?>][description]" id="description"><?php echo isset($banner_image['description'][$language['language_id']]) ? $banner_image['description'][$language['language_id']]['description'] : ''; ?></textarea>
+				<img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />
+				<?php } ?>
+				</td>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			html += '  <td class="text-left"><input type="text" name="banner_image[' + image_row + '][link]" value="" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>';
+			]]></search>
+			<add position="before"><![CDATA[
+	 html += '<td class="text-left">';
+	<?php foreach ($languages as $language) { ?>
+	html += '<textarea style="width:300px; height:150px;" name="banner_image[' + image_row + '][banner_image_description][<?php echo $language['language_id']; ?>][description]" id="description"></textarea><br />';
+	<?php } ?>
+	html += '</td>';
+	]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/banner.php">
+		<operation>
+			<search><![CDATA[
+			'title' => $result['title'],
+			]]></search>
+			<add position="before"><![CDATA[
+			'description' => html_entity_decode($result['description']),
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/tm_slideshow.php">
+		<operation>
+			<search><![CDATA[
+			'title' => $result['title'],
+			]]></search>
+			<add position="before"><![CDATA[
+			'description' => html_entity_decode($result['description']),
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/module/parallax.php">
+		<operation>
+			<search><![CDATA[
+			'title' => $result['title'],
+			]]></search>
+			<add position="before"><![CDATA[
+			'description' => html_entity_decode($result['description']),
+			]]></add>
+		</operation>
+	</file>
+
+</modification>

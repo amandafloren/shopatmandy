@@ -1,0 +1,271 @@
+2015-01-21 9:22:37 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Description fo banners
+FILE: admin/controller/design/banner.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 279
+CODE: $data['banner_images'][] = array(
+LINE: 385
+FILE: admin/model/design/banner.php
+CODE: $this->db->escape($banner_image_description['title']) . "'");
+LINE: 16
+LINE: 41
+CODE: $banner_image_description_data[$banner_image_description['language_id']] = array('title' => $banner_image_description['title']);
+LINE: 113
+CODE: 'banner_image_description' => $banner_image_description_data,
+LINE: 120
+FILE: admin/language/de-DE/design/banner.php
+CODE: $_['entry_sort_order']   = 'Sort Order';
+NOT FOUND!
+FILE: admin/language/english/design/banner.php
+CODE: $_['entry_sort_order']   = 'Sort Order';
+LINE: 22
+FILE: admin/language/russian/design/banner.php
+CODE: $_['entry_sort_order']   = 'Sort Order';
+NOT FOUND!
+FILE: admin/view/template/design/banner_form.tpl
+CODE: <td class="text-left"><?php echo $entry_title; ?></td>
+LINE: 53
+CODE: <td class="text-left"><input type="text" name="banner_image[<?php echo $image_row; ?>][link]" value="<?php echo $banner_image['link']; ?>" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>
+LINE: 75
+CODE: html += '  <td class="text-left"><input type="text" name="banner_image[' + image_row + '][link]" value="" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>';
+LINE: 115
+FILE: catalog/controller/module/banner.php
+CODE: 'title' => $result['title'],
+LINE: 19
+FILE: catalog/controller/module/parallax.php
+CODE: 'title' => $result['title'],
+LINE: 22
+----------------------------------------------------------------
+MOD: Footer Position
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_information'] = $this->language->get('text_information');
+LINE: 5
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+LINE: 46
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <div class="col-sm-4">
+NOT FOUND!
+FILE: catalog/view/theme/theme509/template/common/footer.tpl
+CODE: <div class="col-sm-4">
+LINE: 39
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <?php if ($layout_module['position'] == 'content_top') { ?>
+LINE: 106
+CODE: html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+LINE: 189
+FILE: admin/controller/design/layout.php
+CODE: $data['text_content_top'] = $this->language->get('text_content_top');
+LINE: 265
+FILE: admin/language/english/design/layout.php
+CODE: $_['text_content_top']    = 'Content Top';
+LINE: 10
+----------------------------------------------------------------
+MOD: Header Top Position on Home page
+FILE: catalog/controller/common/home.php
+CODE: $data['content_top'] = $this->load->controller('common/content_top');
+LINE: 13
+FILE: catalog/view/theme/default/template/common/home.tpl
+CODE: <?php echo $header; ?>
+LINE: 0
+FILE: catalog/view/theme/theme509/template/common/home.tpl
+CODE: <?php echo $header; ?>
+LINE: 0
+CODE: <?php if ($layout_module['position'] == 'content_top') { ?>
+LINE: 113
+CODE: html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+LINE: 196
+CODE: $data['text_content_top'] = $this->language->get('text_content_top');
+LINE: 265
+CODE: $_['text_content_top']    = 'Content Top';
+LINE: 10
+----------------------------------------------------------------
+MOD: Text sale
+FILE: catalog/controller/module/featured.php
+CODE: $data['button_compare'] = $this->language->get('button_compare');
+LINE: 11
+FILE: catalog/controller/module/special.php
+CODE: $data['button_compare'] = $this->language->get('button_compare');
+LINE: 11
+FILE: catalog/controller/module/latest.php
+CODE: $data['button_compare'] = $this->language->get('button_compare');
+LINE: 11
+FILE: catalog/language/english/module/featured.php
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 5
+FILE: catalog/language/english/module/special.php
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 5
+FILE: catalog/language/english/module/latest.php
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 5
+FILE: catalog/language/de-DE/module/featured.php
+CODE: $_['text_tax']
+LINE: 12
+FILE: catalog/language/de-DE/module/special.php
+CODE: $_['text_tax']
+LINE: 12
+FILE: catalog/language/de-DE/module/latest.php
+CODE: $_['text_tax']
+LINE: 12
+FILE: catalog/language/russian/module/featured.php
+CODE: $_['text_tax']
+LINE: 5
+FILE: catalog/language/russian/module/special.php
+CODE: $_['text_tax']
+LINE: 5
+FILE: catalog/language/russian/module/latest.php
+CODE: $_['text_tax']
+LINE: 5
+----------------------------------------------------------------
+MOD: TM Featured 
+CODE: 'rating'      => $rating,
+LINE: 70
+CODE: $this->load->model('tool/image');
+LINE: 18
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 9
+CODE: $product_info = $this->model_catalog_product->getProduct($product_id);
+LINE: 51
+CODE: $_['heading_title']
+LINE: 10
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['text_tax']		= 'ohne Steuer';
+LINE: 29
+CODE: $_['text_tax']
+LINE: 10
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Footer
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 21
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+LINE: 55
+FILE: catalog/language/de-DE/common/footer.php
+CODE: $_['text_information']
+LINE: 10
+FILE: catalog/language/english/common/footer.php
+CODE: $_['text_information']
+LINE: 2
+FILE: catalog/language/russian/common/footer.php
+CODE: $_['text_information']
+LINE: 4
+----------------------------------------------------------------
+MOD: TM Header
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 20
+CODE: $data['text_all'] = $this->language->get('text_all');
+LINE: 53
+CODE: $data['telephone'] = $this->config->get('config_telephone');
+LINE: 88
+CODE: $this->load->language('common/header');
+LINE: 37
+FILE: catalog/language/english/common/header.php
+CODE: $_['text_checkout']       = 'Checkout';
+NOT FOUND!
+----------------------------------------------------------------
+MOD: TM Header Cart
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_loading'] = $this->language->get('text_loading');
+LINE: 46
+FILE: catalog/language/de-DE/common/cart.php
+CODE: $_['text_items']
+LINE: 10
+FILE: catalog/language/english/common/cart.php
+CODE: $_['text_items']
+LINE: 2
+FILE: catalog/language/russian/common/cart.php
+CODE: $_['text_items']
+LINE: 2
+FILE: catalog/language/de-DE/checkout/cart.php
+CODE: $_['text_items']
+LINE: 16
+FILE: catalog/language/english/checkout/cart.php
+CODE: $_['text_items']
+LINE: 8
+FILE: catalog/language/russian/checkout/cart.php
+CODE: $_['text_items']
+LINE: 16
+CODE: $_['text_recurring']
+LINE: 18
+CODE: $_['text_recurring']
+LINE: 10
+----------------------------------------------------------------
+MOD: TM latest 
+CODE: 'rating'      => $rating,
+LINE: 71
+CODE: $this->load->model('tool/image');
+LINE: 18
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 9
+CODE: foreach ($results as $result) {
+LINE: 54
+CODE: $_['heading_title']
+LINE: 10
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['text_tax']		= 'ohne Steuer';
+LINE: 29
+CODE: $_['text_tax']
+LINE: 10
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Live search
+FILE: catalog/controller/product/search.php
+CODE: class ControllerProductSearch extends Controller {
+LINE: 1
+----------------------------------------------------------------
+MOD: TM Product Category image
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 163
+CODE: $data['categories'][] = array(
+LINE: 161
+----------------------------------------------------------------
+MOD: TM Special 
+CODE: 'rating'      => $rating,
+LINE: 71
+CODE: $this->load->model('tool/image');
+LINE: 18
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 9
+CODE: foreach ($results as $result) {
+LINE: 54
+CODE: $_['heading_title']
+LINE: 10
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['heading_title']
+LINE: 2
+CODE: $_['text_tax']		= 'ohne Steuer';
+LINE: 29
+CODE: $_['text_tax']
+LINE: 10
+LINE: 22
+----------------------------------------------------------------
+MOD: Top Menu All Levels
+CODE: $data['language'] = $this->load->controller('common/language');
+LINE: 169
+----------------------------------------------------------------

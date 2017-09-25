@@ -1,0 +1,78 @@
+Badung, 30000
+Denpasar, 30000
+Pangkal Pinang, 60000
+Cilegon, 50000
+Kab Tangerang, 50000
+Lebak, 50000
+Pandeglang, 50000
+Serang, 50000
+Tangerang, 50000
+Bengkulu, 50000
+Bantul, 40000
+Gunung Kidul, 40000
+Kulon Progo, 40000
+Sleman, 40000
+Yogyakarta, 40000
+Administrasi Jakarta Barat, 40000
+Administrasi Jakarta Pusat, 40000
+Administrasi Jakarta Selatan, 40000
+Administrasi Jakarta Timur, 40000
+Administrasi Jakarta Utara, 40000
+Jambi, 55000
+Bandung, 50000
+Bandung Barat, 50000
+Bekasi, 50000
+Bogor, 50000
+Ciamis, 50000
+Cianjur, 55000
+Cimahi, 50000
+Cirebon, 50000
+Depok, 50000
+Garut, 50000
+Indramayu, 50000
+Karawang, 50000
+Kuningan, 50000
+Majalengka, 50000
+Purwakarta, 50000
+Subang, 50000
+Sukabumi, 55000
+Sumedang, 50000
+Tasikmalaya, 50000
+Boyolali, 40000
+Kab Magelang, 50000
+Karang Anyar, 40000
+Kendal, 40000
+Klaten, 40000
+Kudus, 40000
+Magelang, 40000
+Salatiga, 40000
+Semarang, 40000
+Sragen, 40000
+Sukoharjo, 40000
+Surakarta, 40000
+Wonogiri, 40000
+Gresik, 16000
+Jombang, 16000
+Kab Probolinggo, 16000
+Kabupaten Malang, 16000
+Kediri, 16000
+Lamongan, 16000
+Malang, 16000
+Mojokerto, 16000
+Mojokerto, 16000
+Probolinggo, 16000	
+Sidoarjo, 16000	
+Surabaya, 16000	
+Tuban, 16000
+Pontianak, 55000
+Banjarmasin, 50000
+Kota Baru, 55000
+Palangkaraya, 60000
+Balikpapan, 50000
+Batam, 50000
+Bandar Lampung, 55000
+Mataram	40000
+Pekanbaru, 50000
+Padang, 60000
+Palembang, 55000
+Medan, 50000

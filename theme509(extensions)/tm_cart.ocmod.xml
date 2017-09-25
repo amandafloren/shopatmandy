@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>TM Header Cart</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>2</code>
+	<file path="catalog/controller/common/cart.php">
+		<operation>
+			<search><![CDATA[ $data['text_loading'] = $this->language->get('text_loading'); ]]></search>
+			<add position="after"><![CDATA[ 
+				$data['text_items2'] = sprintf($this->language->get('text_items2'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total));
+				$data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
+				]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/common/cart.php">
+		<operation>
+			<search><![CDATA[ $_['text_items'] ]]></search>
+			<add position="before"><![CDATA[ 
+			$_['text_items2']    = '%s';
+			$_['text_shopping_cart']    = 'Shopping Cart:';
+				]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/checkout/cart.php">
+		<operation>
+			<search><![CDATA[ $_['text_items'] ]]></search>
+			<add position="before"><![CDATA[ 
+			$_['text_items2']    = '%s';
+			$_['text_shopping_cart']    = 'Shopping Cart:';
+				]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/de-DE/common/cart.php">
+		<operation>
+			<search><![CDATA[ $_['text_recurring'] ]]></search>
+			<add position="before"><![CDATA[ 
+			$_['text_shopping_cart']= 'Warenkorb: ';
+				]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/russian/common/cart.php">
+		<operation>
+			<search><![CDATA[ $_['text_recurring'] ]]></search>
+			<add position="before"><![CDATA[ 
+			$_['text_shopping_cart'] = 'Корзина: ';
+				]]></add>
+		</operation>
+	</file>
+</modification>

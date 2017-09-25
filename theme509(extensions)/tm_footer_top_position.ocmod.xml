@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Footer Position</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>13</code>
+	<file path="catalog/controller/common/footer.php">
+		<operation>
+			<search><![CDATA[ $data['text_information'] = $this->language->get('text_information'); ]]></search>
+			<add position="before"><![CDATA[
+			$data['maintenance'] = $this->config->get('config_maintenance');
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+			]]></search>
+			<add position="after"><![CDATA[
+			if (($data['maintenance']==0)) {
+			$data['footer_top'] = $this->load->controller('common/footer_top');
+			}
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/common/footer.tpl">
+		<operation>
+			<search><![CDATA[
+			<div class="col-sm-4">
+			]]></search>
+			<add position="after"><![CDATA[
+			<?php if ($maintenance == 0){ ?>
+				<?php echo $footer_top; ?>
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/view/template/design/layout_form.tpl">
+		<operation>
+			<search><![CDATA[
+			<?php if ($layout_module['position'] == 'content_top') { ?>
+			]]></search>
+			<add position="before"><![CDATA[
+			<?php if ($layout_module['position'] == 'footer_top') { ?>
+					<option value="footer_top" selected="selected"><?php echo $text_footer_top; ?></option>
+					<?php } else { ?>
+					<option value="footer_top"><?php echo $text_footer_top; ?></option>
+					<?php } ?>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+			]]></search>
+			<add position="after"><![CDATA[
+				html += '    <option value="footer_top"><?php echo $text_footer_top; ?></option>';
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/controller/design/layout.php">
+		<operation>
+			<search><![CDATA[
+			$data['text_content_top'] = $this->language->get('text_content_top');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['text_footer_top'] = $this->language->get('text_footer_top');
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/language/english/design/layout.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_content_top']    = 'Content Top';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['text_footer_top']    = 'Footer';
+			]]></add>
+		</operation>
+	</file>
+</modification>

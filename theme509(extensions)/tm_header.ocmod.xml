@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>TM Header</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<author>Tm</author>
+	<code>6</code>
+	<file path="catalog/controller/common/header.php">
+		<operation>
+			<search><![CDATA[ $data['name'] = $this->config->get('config_name'); ]]></search>
+			<add position="after"><![CDATA[ 
+			$data['maintenance'] = $this->config->get('config_maintenance');
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[ $data['text_all'] = $this->language->get('text_all'); ]]></search>
+			<add position="before"><![CDATA[ 
+			
+			$data['text_shopcart'] = $this->language->get('text_shopcart');
+			$data['text_information'] = $this->language->get('text_information');
+			$data['text_service'] = $this->language->get('text_service');
+			$data['text_extra'] = $this->language->get('text_extra');
+			$data['text_account'] = $this->language->get('text_account');
+			$data['text_contact'] = $this->language->get('text_contact');
+			$data['text_return'] = $this->language->get('text_return');
+			$data['text_sitemap'] = $this->language->get('text_sitemap');
+			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
+			$data['text_voucher'] = $this->language->get('text_voucher');
+			$data['text_affiliate'] = $this->language->get('text_affiliate');
+			$data['text_special'] = $this->language->get('text_special');
+			$data['text_account'] = $this->language->get('text_account');
+			$data['text_order'] = $this->language->get('text_order');
+			$data['text_newsletter'] = $this->language->get('text_newsletter');
+			$data['text_category'] = $this->language->get('text_category');
+			
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[ $data['telephone'] = $this->config->get('config_telephone'); ]]></search>
+			<add position="after"><![CDATA[ 
+			$data['sitemap'] = $this->url->link('information/sitemap');
+			$data['special'] = $this->url->link('product/special');
+			$data['contact'] = $this->url->link('information/contact');
+			$data['contact'] = $this->url->link('information/contact');
+			$data['return'] = $this->url->link('account/return/insert', '', 'SSL');
+			$data['sitemap'] = $this->url->link('information/sitemap');
+			$data['manufacturer'] = $this->url->link('product/manufacturer', '', 'SSL');
+			$data['voucher'] = $this->url->link('account/voucher', '', 'SSL');
+			$data['affiliate'] = $this->url->link('affiliate/account', '', 'SSL');
+			$data['account'] = $this->url->link('account/account', '', 'SSL');
+			$data['order'] = $this->url->link('account/order', '', 'SSL');
+			$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');		
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[ $this->load->language('common/header'); ]]></search>
+			<add position="before"><![CDATA[ 
+			if (($data['maintenance']==0)) {
+			$data['informations'] = array();
+			foreach ($this->model_catalog_information->getInformations() as $result) {
+				if ($result['bottom']) {
+					$data['informations'][] = array(
+						'title' => $result['title'],
+						'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+					);
+				}
+			}	
+		}
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/english/common/header.php">
+		<operation>
+			<search><![CDATA[ $_['text_checkout']       = 'Checkout'; ]]></search>
+			<add position="after"><![CDATA[ 
+					$_['text_information']  = 'Information';
+					$_['text_service']      = 'Customer Service';
+					$_['text_extra']        = 'Extras';
+					$_['text_contact']      = 'Contact Us';
+					$_['text_return']       = 'Returns';
+					$_['text_sitemap']      = 'Site Map';
+					$_['text_manufacturer'] = 'Brands';
+					$_['text_voucher']      = 'Gift Vouchers';
+					$_['text_affiliate']    = 'Affiliates';
+					$_['text_special']      = 'Specials';
+					$_['text_account']      = 'My Account';
+					$_['text_order']        = 'Order History';
+					$_['text_newsletter']   = 'Newsletter';
+					$_['text_category']   = 'Categories';
+					$_['text_latest_added']   = 'Latest added product(s):';
+				]]></add>
+		</operation>
+	</file>
+
+</modification>

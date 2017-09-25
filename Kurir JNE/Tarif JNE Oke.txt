@@ -1,0 +1,450 @@
+Aceh Barat Daya, 50000
+Aceh Barat Meulaboh, 50000
+Aceh Besar, 50000
+Aceh Jaya, 50000
+Aceh Selatan, 50000
+Aceh Singkil, 50000
+Aceh Tamiang, 63000
+Aceh Tengah, 50000
+Aceh Tenggara, 50000
+Aceh Timur, 50000
+Aceh Utara, 50000
+Banda Aceh, 30000
+Bener Meriah, 50000
+Bireuen, 50000
+Gayo Lues, 50000
+Langsa, 50000
+Lhokseumawe, 50000
+Nagan Raya, 50000
+Pidie, 63000
+Pidie Jaya, 50000
+Sabang, 50000
+Simeulue,
+Subulussalam, 50000
+Badung, 14000
+Bangli, 16000
+Buleleng, 20000
+Denpasar, 14000
+Gianyar, 16000
+Jembrana, 16000
+Karangasem, 16000
+Klungkung, 16000
+Tabanan, 16000
+Bangka, 39000
+Bangka Barat, 35000
+Bangka Selatan, 35000
+Bangka Tengah, 35000
+Belitung, 29000
+Belitung Timur, 29000
+Pangkal Pinang, 22000
+Cilegon, 16000
+Kab Serang, 22000
+Kab Tangerang, 15000
+Lebak, 17000
+Pandeglang, 17000
+Serang, 16000
+Tangerang, 15000
+Bengkulu, 22000
+Bengkulu Selatan, 45000
+Bengkulu Utara, 36000
+Kaur, 36000
+Kepahiang, 36000
+Lebong, 36000
+Muko-muko, 36000
+Rejang Lebong, 36000
+Seluma, 45000
+Bantul, 13000
+Gunung Kidul, 16000
+Kulon Progo, 16000
+Sleman, 13000
+Yogyakarta, 13000
+Administrasi Jakarta Barat, 14000
+Administrasi Jakarta Pusat, 14000
+Administrasi Jakarta Selatan, 14000
+Administrasi Jakarta Timur, 14000
+Administrasi Jakarta Utara, 14000
+Administrasi Kepulauan Seribu, 14000
+Gorontalo, 36000
+Gorontalo Utara, 63000
+Marisa Pahuwalo, 63000
+Suwawa Bone Bolango, 63000
+Tilamuta Boalemo, 63000
+Batang Hari, 36000
+Bungo, 36000
+Jambi, 22000
+Kerinci, 
+Merangin, 36000
+Muaro Jambi, 36000
+Sarolangun, 36000
+Tanjung Jabung Barat, 36000
+Tanjung Jabung Timur, 36000
+Tebo, 45000
+Bandung, 17000
+Bandung Barat, 17000
+Banjar, 20000
+Bekasi, 15000
+Bogor, 15000
+Ciamis, 20000
+Cianjur, 20000
+Cimahi, 17000
+Cirebon, 17000
+Depok, 15000
+Garut, 20000
+Indramayu, 20000
+Kab Bandung, 17000
+Karawang, 16000
+Kuningan, 20000
+Majalengka, 20000
+Purwakarta, 20000
+Subang, 20000
+Sukabumi, 17000
+Sumedang, 20000
+Tasikmalaya, 20000
+Banjarnegara, 16000
+Banyumas, 16000
+Batang, 16000
+Blora, 16000
+Boyolali, 14000
+Brebes, 14000
+Cilacap, 17000
+Demak, 16000
+Grobogan, 20000
+Jepara, 16000
+Kab Magelang, 14000
+Kab Pekalongan, 16000
+Karang Anyar, 16000
+Kebumen, 16000
+Kendal, 16000
+Klaten, 16000
+Kudus, 16000
+Magelang, 14000
+Pati, 16000
+Pekalongan, 16000
+Pemalang, 16000
+Purbalingga, 16000
+Purwokerto, 22000
+Purworejo, 20000
+Rembang, 16000
+Salatiga, 16000
+Semarang, 13000
+Sragen, 16000
+Sukoharjo, 16000
+Surakarta, 13000
+Tegal, 16000
+Temanggung, 16000
+Wonogiri, 16000
+Wonosobo, 16000
+Bangkalan, 12000
+Banyuwangi, 5000
+Batu, 12000
+Blitar, 12000
+Bojonegoro, 16000
+Bondowoso, 9000
+Gresik, 9000
+Jember, 9000
+Jombang, 12000
+Kab Madiun, 9000
+Kab Probolinggo, 9000
+Kabupaten Malang, 9000
+Kediri	9000
+Lamongan, 12000
+Lumajang, 12000
+Madiun, 9000
+Magetan, 12000
+Malang, 9000
+Mojokerto, 9000
+Nganjuk, 12000
+Ngawi, 12000
+Pacitan, 12000
+Pamekasan, 12000
+Pasuruan, 9000
+Ponorogo, 12000
+Probolinggo, 9000
+Sampang, 12000
+Sidoarjo, 9000
+Situbondo, 12000
+Sumenep, 12000
+Surabaya, 000
+Trenggalek, 12000
+Tuban, 12000
+Tulungagung, 12000
+Bengkayang, 30000
+Kapuas Hulu, 54000
+Kayong Utara, 45000
+Ketapang, 30000
+Kubu Raya, 38000
+Landak, 30000
+Melawi, 45000
+Pontianak, 23000
+Sambas, 30000
+Sanggau, 30000
+Sekadau, 38000
+Singkawang, 30000
+Sintang, 38000
+Balangan, 37000
+Banjar, 37000
+Banjarbaru, 20000
+Banjarmasin, 20000
+Barito Kuala, 37000
+Hulu Sungai Selatan, 37000
+Hulu Sungai Tengah, 37000
+Hulu Sungai Utara, 37000
+Kota Baru, 22000
+Tabalong, 37000
+Tampin, 37000
+Tanah Bambu, 37000
+Tanah Laut, 37000
+Barito Selatan, 37000
+Barito Timur, 37000
+Barito Utara, 37000
+Gunung Mas, 54000
+Kapuas, 54000
+Katingan, 54000
+Kotawaringin Barat, 54000
+Kotawaringin Timur, 54000
+Lamandau, 54000
+Murung Raya, 37000
+Palangkaraya, 23000
+Pulang Pisau, 54000
+Seruyan, 54000
+Sukamara, 54000
+Balikpapan, 19000
+Berau, 37000
+Bontang, 29000
+Bulungan, 43000
+Kutai Barat, 47000
+Kutai Kartanegara, 47000
+Kutai Timur, 43000
+Malinau, 43000
+Nunukan, 43000
+Panajam Paser Utara, 37000
+Paser, 37000
+Samarinda, 23000
+Tana Tidung, 43000
+Tarakan, 29000
+Batam, 22000
+Bintan, 54000
+Karimun, 57000
+Lingga, 45000
+Natuna, 57000
+Tanjung Pinang, 30000
+Bandar Lampung, 21000
+Lampung Barat, 30000
+Lampung Selatan, 30000
+Lampung Tengah, 30000
+Lampung Timur, 30000
+Lampung Utara, 30000
+Metro, 30000
+Pesawaran, 30000
+Tanggamus, 30000
+Tulang Bawang, 38000
+Way Kanan, 30000
+Ambon, 37000
+Buru, 
+Kepulauan Aru, 
+Maluku Tengah, 
+Maluku Tenggara, 
+Maluku Tenggara Barat, 
+Seram Bagian Barat, 
+Seram Bagian Timur, 
+Halmahera Barat, 93000
+Halmahera Selatan, 93000
+Halmahera Tengah, 93000
+Halmahera Timur, 93000
+Halmahera Utara, 93000
+Kepulauan Sula, 93000
+Ternate, 93000
+Tidore, 93000
+Bima, 24000
+Dompu, 24000
+Lombok Barat, 24000
+Lombok Tengah, 24000
+Lombok Timur, 24000
+Mataram, 17000
+Sumbawa, 24000
+Sumbawa Barat, 24000
+Alor, 70000
+Belu, 39000
+Ende, 39000
+Flores Timur, 39000
+Kupang, 29000
+Lembata, 39000
+Manggarai, 39000
+Manggarai Barat, 39000
+Manggarai Timur, 
+Nagekeo, 
+Ngada, 
+Rote Ndao, 39000
+Sikka, 39000
+Sumba Barat, 39000
+Sumba Barat Daya, 39000
+Sumba Tengah, 
+Sumba Timur, 39000
+Timor Tengah Selatan, 39000
+Timor Tengah Utara, 39000
+Asmat, 124000
+Biak Numfor, 124000
+Boven Digoel, 124000
+Jayapura, 57000
+Jayawijaya, 124000
+Kab Jayapura, 57000
+Keerom, 124000
+Mamberamo Raya, 
+Mappi, 153000
+Merauke, 124000
+Mimika, 149000
+Nabire, 153000
+Paniai, 153000
+Pegunungan Bintang, 124000
+Puncak Jaya, 153000
+Sarmi, 124000
+Supiori, 124000
+Talikora, 
+Waropen, 
+Yahukimo, 
+Yapen Waropen, 124000
+Fak-fak, 160000
+Kab Sorong, 160000
+Kaimana, 160000
+Kota Sorong, 160000
+Manokwari, 160000
+Raja Ampat, 160000
+Sorong Selatan, 90000
+Teluk Bintuni, 160000
+Teluk Wondama, 160000
+Bengkalis, 39000
+Dumai, 39000
+Indragiri Hilir, 39000
+Indragiri Hulu, 39000
+Kampar	49000
+Kuantan Sengingi, 27000
+Meranti, 49000
+Palalawan, 49000
+Pekanbaru, 23000
+Rokan Hilir, 39000
+Rokan Hulu, 39000
+Siak, 49000
+Majene, 33000
+Mamasa, 33000
+Mamuju, 33000
+Mamuju Utara, 33000
+Polewali Mandar, 33000
+Bantaeng, 33000
+Barru, 33000
+Bone, 33000
+Bulukumba, 33000
+Enrekang, 33000
+Goa, 33000
+Jeneponto, 33000
+Luwu Timur, 33000
+Luwu Utara, 33000
+Makassar, 18000
+Maros, 33000
+Palopo, 26000
+Pangkajene Kepulauan, 33000
+Pare-pare, 26000
+Pinrang, 33000
+Selayar, 33000
+Sindenreng Rappang, 33000
+Sinjai, 33000
+Soppeng, 33000
+Takalar, 33000
+Tana Toraja, 33000
+Tana Toraja Utara, 33000
+Wajo, 33000
+Banggai, 52000
+Banggai Kepulauan, 52000
+Buol, 52000
+Donggala, 52000
+Morowali, 52000
+Palu, 29000
+Parigi Moutong, 52000
+Poso, 52000
+Tojo Una-una, 52000
+Toli-toli, 52000
+Bombana, 54000
+Buton, 54000
+Buton Utara, 54000
+Kendari, 37000
+Kolaka, 54000
+Kolaka Utara, 54000
+Konawe, 54000
+Konawe Utara, 54000
+Konawe Selatan, 54000
+Kota Bau-bau, 43000
+Muna, 54000
+Wakatobi, 54000
+Bitung, 48000
+Bolaang Mongondow, 60000
+Bolaang Mongondow Utara, 60000
+Kepulauan Sangihe, 60000
+Kepulauan Talaud, 60000
+Manado, 33000
+Minahasa, 60000
+Minahasa Selatan, 60000
+Minahasa Tenggara, 60000
+Minahasa Utara, 60000
+Tomohon, 48000
+Agam, 30000
+Bukit Tinggi, 30000
+Dharmasraya, 38000
+Kab Solok, 30000
+Kepulauan Mentawai, 30000
+Lima Puluh Kota, 30000
+Padang, 22000
+Padang Panjang, 30000
+Padang Pariaman, 30000
+Pariaman, 30000
+Pasaman, 38000
+Pasaman Barat, 37000
+Payakumbuh, 30000
+Pesisir Selatan, 38000
+Sawahlunto, 30000
+Sijunjung, 37000
+Solok, 30000
+Solok Selatan, 30000
+Tanah Datar, 30000
+Banyuasin, 40000
+Empat Lawang, 32000
+Lahat, 32000
+Lubuk Linggau, 32000
+Muara Enim, 40000
+Musi Banyuasin, 32000
+Musi Rawas, 32000
+Ogan Ilir, 32000
+Ogan Komering Ilir, 32000
+Ogan Komering Ulu, 32000
+Ogan Komering Ulu Selatan, 34000
+Ogan Komering Ulu Timur, 34000
+Pagar Alam, 32000
+Palembang, 19000
+Prabumulih, 32000
+Asahan, 34000
+Batubara, 34000
+Binjai, 34000
+Dairi, 34000
+Deli Serdang, 34000
+Humbang Hasundutan, 34000
+Karo, 34000
+Labuhan Batu, 34000
+Langkat	34000
+Mandailing Natal, 34000
+Medan, 26000
+Nias, 34000
+Nias Selatan, 34000
+Padang Lawas, 34000
+Padang Lawas Utara, 34000
+Padang Sidempuan, 34000
+Pakpak Barat, 34000
+Pematangsiantar, 34000
+Samosir, 34000
+Serdang Bedagai, 34000
+Sibolga, 34000
+Simalungun, 43000
+Tanjung Balai, 34000
+Tapanuli Selatan, 34000
+Tapanuli Tengah, 43000
+Tapanuli Utara, 34000
+Tebing Tinggi, 34000
+Toba Samosir, 34000
+

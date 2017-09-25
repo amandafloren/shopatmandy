@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Header Top Position on Home page</name>
+	<version>1.0</version>
+	<author>viva</author>
+	<link>http://www.templatemonster.com</link>
+	<code>7</code>
+	<file path="catalog/controller/common/home.php">
+		<operation>
+			<search><![CDATA[
+			$data['content_top'] = $this->load->controller('common/content_top');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['header_top'] = $this->load->controller('common/header_top');
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/common/home.tpl">
+		<operation>
+			<search><![CDATA[
+			<?php echo $header; ?>
+			]]></search>
+			<add position="after"><![CDATA[
+			<div class="header_modules"><?php echo $header_top; ?></div>
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/view/template/design/layout_form.tpl">
+		<operation>
+			<search><![CDATA[
+			<?php if ($layout_module['position'] == 'content_top') { ?>
+			]]></search>
+			<add position="before"><![CDATA[
+			<?php if ($layout_module['position'] == 'header_top') { ?>
+					<option value="header_top" selected="selected"><?php echo $text_header_top; ?></option>
+					<?php } else { ?>
+					<option value="header_top"><?php echo $text_header_top; ?></option>
+					<?php } ?>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+			]]></search>
+			<add position="after"><![CDATA[
+				html += '    <option value="header_top"><?php echo $text_header_top; ?></option>';
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/controller/design/layout.php">
+		<operation>
+			<search><![CDATA[
+			$data['text_content_top'] = $this->language->get('text_content_top');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['text_header_top'] = $this->language->get('text_header_top');
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/language/english/design/layout.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_content_top']    = 'Content Top';
+			]]></search>
+			<add position="after"><![CDATA[
+			$_['text_header_top']    = 'Header Top';
+			]]></add>
+		</operation>
+	</file>
+</modification>
